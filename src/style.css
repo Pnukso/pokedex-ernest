@@ -1,0 +1,102 @@
+:root {
+    --primary: #2D2926;
+    --secondary: #ed6f63;
+}
+
+body {
+    background-color: var(--secondary);
+    color: var(--primary);
+}
+
+.pokemonname {
+    color: var(--primary);
+    text-decoration: none;
+    font-size: 3vmin;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5vmin;
+    font-size: 6vmin;
+}
+.nav-item {
+    text-decoration: none;
+    color: var(--primary);
+}
+
+.pokemon-container {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(20vmin, 1fr));
+    gap: 5vmin;
+    padding: 5vmin;
+}
+
+.pokemon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1vmin;
+    padding: 4vmin;
+    border: 1px solid black;
+    border-radius: 1vmin;
+    text-transform: capitalize;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 5vmin;
+    padding: 5vmin;
+
+}
+
+button {
+    padding: 1vmin;
+    font-size: 3vmin;
+    border: 2px solid var(--primary);
+    border-radius: 1vmin;
+    background-color: var(--secondary);
+    color: var(--primary);
+    cursor: pointer;
+}
+button:disabled {
+    opacity: 0.5;
+    color: var(--primary);
+    cursor: not-allowed;
+
+}
+
+.aboutpage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5vmin;
+    padding: 2vmin;
+}
+
+.aboutpage h1 {
+    font-size: 6vmin;
+    text-align: center;
+}
+
+.pokemon-details-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5vmin;
+    gap: 3vmin;
+}
+
+.pokemon-details-container h1 {
+    font-size: 6vmin;
+    text-transform: capitalize;
+}
+
+.pokemon-details-container img {
+    width: 30vmin;
+    height: 30vmin;
+}
